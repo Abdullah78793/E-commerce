@@ -6,7 +6,7 @@ import HomeSectionCard from "../HomeSectionCard/HomeSectionCard";
 
 
 
-const HomeSectionCarousal = ({data,sectionName}) => {
+const HomeSectionCarousal = ({data,sectionname}) => {
     const [activeIndex, setActiveIndex] = useState(0);
     const carouselRef = useRef(null);  // Ref for manual slide control
 
@@ -45,7 +45,7 @@ const HomeSectionCarousal = ({data,sectionName}) => {
 
     return (
         <div className="">
-            <h2 className="text-2xl font-extrabold text-gray-800 py-5">{sectionName}</h2>
+            <h2 className="text-2xl font-extrabold text-gray-800 py-5">{sectionname}</h2>
             <div className="border border-neutral-200 relative p-5">
                 <AliceCarousel
                     ref={carouselRef}
